@@ -13,6 +13,7 @@ class PostSeeder extends Seeder
      */
     public function run(): void
     {
-        Post::factory(10)->create();
+        $randomCount = random_int(1000, 3000);
+        Post::factory($randomCount)->create();
     }
 }

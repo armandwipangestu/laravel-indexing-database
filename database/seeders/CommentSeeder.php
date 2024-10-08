@@ -13,6 +13,7 @@ class CommentSeeder extends Seeder
      */
     public function run(): void
     {
-        Comment::factory(10)->create();
+        $randomCount = random_int(3000, 5000);
+        Comment::factory($randomCount)->create();
     }
 }
