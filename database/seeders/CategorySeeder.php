@@ -13,7 +13,7 @@ class CategorySeeder extends Seeder
      */
     public function run(): void
     {
-        $randomCount = random_int(1000, 1500);
+        $randomCount = random_int(10000, 15000);
         Category::factory($randomCount)->create();
     }
 }
